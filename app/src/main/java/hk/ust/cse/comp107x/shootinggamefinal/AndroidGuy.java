@@ -27,7 +27,7 @@ public class AndroidGuy {
 
         // create a bitmap from the supplied image (the image is the icon that is part of the app)
         android_guy = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(mContext.getResources(),
-                R.mipmap.ic_launcher),50,50, false);
+                R.mipmap.ic_launcher),80,80, false);
 
     }
 
@@ -37,7 +37,7 @@ public class AndroidGuy {
         upperX = ux;
         upperY = uy;
 
-        x = (float) ((upperX-50)*Math.random());
+        x = (float) ((upperX-80)*Math.random());
         y = 0;
     }
 
@@ -46,8 +46,8 @@ public class AndroidGuy {
         y += stepY;
         // Detect when the guy reaches the bottom of the screen
         // restart at a random location at the top of the screen
-        if (y + 50 > upperY) {
-            x = (float) ((upperX-50)*Math.random());
+        if (y + 80 > upperY) {
+            x = (float) ((upperX-80)*Math.random());
             y = 0;
 
             // TODO Make the sound corresponding to the Android Guy falling down the bottom of screen
@@ -62,13 +62,13 @@ public class AndroidGuy {
     // When you reset, starts the Android Guy from a random X co-ordinate location
     // at the top of the screen again
     public void reset() {
-        x = (float) ((upperX-50)*Math.random());
+        x = (float) ((upperX-80)*Math.random());
         y = 0;
     }
 
     // Returns the rectangle enclosing the Guy. Used for collision detection
     public RectF getRect() {
-        return new RectF(x,y,x+50,y+50);
+        return new RectF(x,y,x+80,y+80);
     }
 
     public float getX() {

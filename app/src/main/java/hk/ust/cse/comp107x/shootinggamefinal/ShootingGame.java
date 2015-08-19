@@ -56,10 +56,10 @@ public class ShootingGame extends AppCompatActivity implements View.OnClickListe
 
         this.menu = menu;
         if (play_music) {
-            menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_off_white_24dp);
+            menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_up_white_24dp);
         }
         else {
-            menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_up_white_24dp);
+            menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_off_white_24dp);
         }
 
         return true;
@@ -81,13 +81,13 @@ public class ShootingGame extends AppCompatActivity implements View.OnClickListe
             if (play_music) {
                 player.pause();
                 play_music=false;
-                menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_up_white_24dp);
+                menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_off_white_24dp);
 
             }
             else {
                 player.start();
                 play_music=true;
-                menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_off_white_24dp);
+                menu.findItem(R.id.action_sound).setIcon(R.drawable.ic_volume_up_white_24dp);
             }
         }
 
