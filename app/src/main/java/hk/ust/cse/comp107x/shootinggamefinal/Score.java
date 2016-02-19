@@ -29,7 +29,9 @@ public class Score {
         score--;
     }
 
-    public int getScore() { return score; }
+    public int getScore() {
+        return score;
+    }
 
     public void draw(Canvas canvas) {
 

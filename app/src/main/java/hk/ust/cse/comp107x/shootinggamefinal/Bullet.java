@@ -7,7 +7,7 @@ import android.graphics.RectF;
 
 
 public class Bullet {
-    float radius = 5; // Bullet's radius
+    float radius = 12; // Bullet's radius
     float x; // Bullet's center (x,y)
     float y;
     float stepX = 10; // Bullet's step of motion in (x,y) direction

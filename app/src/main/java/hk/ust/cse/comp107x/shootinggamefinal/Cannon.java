@@ -59,8 +59,8 @@ public class Cannon {
 
     // Draw the cannon on the canvas
     public void draw(Canvas canvas) {
-        canvas.drawLine(x, y - 100, x, y, paint);
-        canvas.drawRect(x - 30, y - 10, x + 30, y, paint);
-        canvas.drawRect(x - 10, y - 40, x + 10, y, paint);
+        canvas.drawLine(x, y - 120, x, y, paint);
+        canvas.drawRect(x - 50, y - 30, x + 50, y, paint);
+        canvas.drawRect(x - 25, y - 50, x + 25, y, paint);
     }
 }
